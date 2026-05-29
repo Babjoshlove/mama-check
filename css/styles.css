@@ -37,14 +37,20 @@
     }
 
     .mama-checkbox3 h5{
-        font-size: 1.4rem;
+        font-size: 1.1rem;
         text-align: center;
         padding: 0 1rem;
     }
     .dashboard-stats {
     grid-template-columns: 1fr;
     width: 90%;
-}
+    }
+    .register-mama,
+    .view-dashboard{
+        width: 100%;
+        justify-content: center;
+        padding: 1.2rem;
+    }
        
 }
 span{
@@ -87,7 +93,7 @@ html{
 }
 .mama-checkbox1 img{
     height: 2.5rem;
-    font-family: 'Montserrat';
+    font-family: 'Montserrat' sans-serif;
 }
 /* dashboard and register maam */
 .reg-container{
@@ -120,7 +126,7 @@ html{
 .register-mama h2{
     font-size: 2rem;
     color: #FFFFFF;
-    font-family: 'Inter';
+    font-family: 'Inter' sans-serif;
 }
 .view-dashboard{
     border: 1px solid #4E2A8A;
