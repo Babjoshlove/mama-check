@@ -16,9 +16,6 @@
         flex-direction: column;
         width: 90%;
     }
-    .register-mama h2 a{
-        color: #ffff;
-    }
     .register-mama,
     .view-dashboard{
         /* width: 100%; */
@@ -62,6 +59,9 @@
     }
        
 }
+ .register-mama h2 a{
+        color: #ffff;
+ }
 span{
     color: Indigo;
     /* font-size: 2rem; */
