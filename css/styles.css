@@ -1,1 +1,46 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
 
+    /* media for smaller screen */
+@media (max-width: 768px){   
+}
+body{
+    font-family:'Montserrat', sans-serif;
+    min-height: 100vh;
+    padding: 2rem 1rem;
+    background-color: #F7F4EF;
+}
+
+html{
+    font-size: 62.5%;
+}
+header{
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 4rem;
+}
+.logo{
+
+}
+.logo img{
+    height: 7rem;
+}
+.nav-bar ul li a{
+    text-decoration: none;
+}
+.nav-bar ul li{
+    list-style: none;
+}
+.nav-bar{
+    border-radius: 50px;
+    background-color: #FFFFFF;
+    width: 90%;
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-self: end;
+}
