@@ -5,45 +5,122 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mama check onboarding screen </title>
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&display=swap">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap">
-    
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-    
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Montserrat:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Boxicons -->
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
 
-    <header>
-        <img src="images/Ellipse 8.png" alt="" height="3rem" display="overflow">
-        <img src="images/Ellipse 9.png" alt="" height="5rem">
-        <!--Logo space here-->
-        <div class="logo">
-            <img src="images/image 11.svg" alt="">
-        </div>
-        <!---Navigation bar here-->
-        <div class="nav-bar">
-            <nav>
-                <ul>
+    <header class="header">
+        <div class="nav-container">
+            <img src="images/" alt="">
+
+            <a href="#" class="logo">
+                <img src="images/image 11.svg" alt="MamaCheck Logo">
+            </a>
+
+            <nav class="navbar">
+                <ul class="nav-links">
                     <li><a href="#">Features</a></li>
                     <li><a href="#">How It Works</a></li>
-                    <li><a href="#">Dashboards </a></li>
+                    <li><a href="#">Dashboards</a></li>
                     <li><a href="#">About</a></li>
                     <li><a href="#">Get Started</a></li>
                 </ul>
-
             </nav>
         </div>
-            
     </header>
-    <section>
 
-    </section>
+    <main>
+        <!--  -->
+        <section class="hero">
+            <div class="container hero-content">
+
+                <!-- Left Content -->
+                <article class="hero-text">
+                    <h1>
+                        <span>Smarter</span> Maternal
+                        Monitoring for Safer
+                        Pregnancies
+                    </h1>
+
+                    <p>
+                        MamaCheck helps CHEWs, healthcare supervisors,
+                        and PHCs track pregnancies, monitor danger signs,
+                        manage ANC follow-ups, and coordinate maternal
+                        care through one unified platform.
+                    </p>
+
+                    <div class="hero-buttons">
+                        <a href="#" class="btn btn-primary">
+                            Get Started
+                        </a>
+
+                        <a href="#" class="btn btn-outline">
+                            Explore Features
+                        </a>
+                    </div>
+                </article>
+                 <!-- Right Image -->
+                <figure class="hero-image">
+
+                    <div class="visit-card">
+                        <img src="images/mdi_calendar.svg" alt="MamaCheck">
+                        <div>
+                            <h4>Next ANC Visit</h4>
+                            <p>June 28, 2026</p>
+                            <small>Primary Health Center, Yaba</small>
+                        </div>
+                    </div>
+
+                    <img
+                        src="images/image 15.svg"
+                        alt="Pregnant woman using MamaCheck">
+
+                    <div class="message-card">
+                        <img src="images/mynaui_message-dots-solid.svg" alt="pregnant check up">
+                        <div>
+                            <strong>MamaCheck</strong>
+                            <p>
+                                Hello, Aisha.
+                                This is a reminder for your ANC visit on June 28.
+                            </p>
+                        </div>
+                    </div>
+                </figure>
+            </div>
+        </section>
+
+        <!-- How It Works -->
+        <section class="how-it-works">
+            <div class="container">
+
+                <span class="section-tag">
+                    How It Works
+                </span>
+
+                <h2>
+                    One Platform. Three Levels Of Care
+                </h2>
+
+                <p>
+                    MamaCheck connects community healthcare workers,
+                    healthcare supervisors and PHCs through a unified
+                    maternal care ecosystem.
+                </p>
+
+            </div>
+        </section>
+    </main>
     
     
 </body>

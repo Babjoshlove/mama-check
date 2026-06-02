@@ -1,46 +1,257 @@
 *{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
 }
-
-    /* media for smaller screen */
-@media (max-width: 768px){   
-}
-body{
-    font-family:'Montserrat', sans-serif;
-    min-height: 100vh;
-    padding: 2rem 1rem;
-    background-color: #F7F4EF;
-}
-
 html{
     font-size: 62.5%;
 }
-header{
-    display: grid;
-    grid-template-columns: auto 1fr;
-    gap: 4rem;
+body{
+    font-family:'roboto','Inter', sans-serif;
+    background:#ffffff;
+    color:#222;
+    font-size: 1.8rem;
 }
-.logo{
-
-}
-.logo img{
-    height: 7rem;
-}
-.nav-bar ul li a{
-    text-decoration: none;
-}
-.nav-bar ul li{
-    list-style: none;
-}
-.nav-bar{
-    border-radius: 50px;
-    background-color: #FFFFFF;
-    width: 90%;
-    height: 5rem;
+.nav-container{
     display: flex;
-    justify-content: center;
-    align-items: center;
-    justify-self: end;
+}
+
+.container{
+    width:90%;
+    /* max-width:1200px; */
+    margin:auto;
+}
+
+/* HEADER */
+.header{
+    padding:2rem 0;
+    background: linear-gradient(to left,#4E2A8A,#634891,#9280B0,#F8F7F7);
+}
+.navbar{
+    width: 80%;
+}
+.nav-container{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.logo{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    text-decoration:none;
+    color:#6b21a8;
+    font-weight:700;
+}
+
+.logo img{
+    width:7rem;
+}
+
+.nav-links{
+    list-style:none;
+    display:flex;
+    gap:3.5rem;
+    background:#FFFFFF;
+    padding:15px 35px;
+    border-radius:5rem;
+}
+
+.nav-links a{
+    text-decoration:none;
+    color:#444;
+    font-weight:500;
+    font-size: 2rem;
+    margin-left: 7rem;
+}
+
+/* HERO */
+.hero{
+    padding:5rem 0 8rem;
+    /* background-color: #F7F4EF33; */
+}
+
+.hero-content{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:6rem;
+}
+
+.hero-text{
+    flex:1;
+}
+
+.hero-text h1{
+    font-size:6rem;
+    line-height:1.15;
+    font-weight:800;
+    margin-bottom:25px;
+    font-family: 'Coolvetica', sans-serif;
+    
+}
+
+.hero-text h1 span{
+    color:#7c3aed;
+}
+
+.hero-text p{
+    max-width:600px;
+    color:#555;
+    line-height:1.8;
+    font-size:2.1rem;
+    margin-bottom:30px;
+    font-weight: 600;
+}
+
+.hero-buttons{
+    display:flex;
+    gap:15px;
+}
+
+.btn{
+    display:inline-block;
+    padding:2rem 2.8rem;
+    border-radius:1.4rem;
+    text-decoration:none;
+    font-weight:600;
+    
+}
+
+.btn-primary{
+    background:#7c3aed;
+    color:white;
+}
+
+.btn-primary:hover{
+    opacity:;
+}
+
+.btn-outline{
+    border:2px solid #d1d5db;
+    color:#333;
+}
+
+/* HERO IMAGE */
+.hero-image{
+    flex:1;
+    position:relative;
+    display:flex;
+    justify-content:center;
+}
+
+.hero-image img{
+    width:50%;
+    /* max-width:450px; */
+}
+
+/* Floating Cards */
+.visit-card{
+    position:absolute;
+    /* top:4rem; */
+    left:0;
+    background:white;
+    padding:15px;
+    border-radius:12px;
+    box-shadow:0 5px 20px rgba(0,0,0,.08);
+    border: 3px solid #8E8E93;
+    display: flex;
+    width: 16rem;
+}
+.visit-card img{
+    height: 4rem;
+    width: 4rem;
+    margin-top: 1rem;
+}
+
+.visit-card h4{
+    color:#6b21a8;
+    margin-bottom:5px;
+}
+
+.message-card{
+    position:absolute;
+    bottom:5rem;
+    right:0;
+    width:16rem;
+    background:white;
+    padding:15px;
+    border-radius:12px;
+    box-shadow:0 5px 20px rgba(0,0,0,.08);
+    border: 3px solid #8E8E93;
+    display: flex;
+}
+.message-card img{
+    height: 3rem;
+}
+.message-card strong{
+    color:#6b21a8;
+}
+
+.message-card p{
+    margin-top:8px;
+    font-size:.85rem;
+    color:#555;
+}
+
+/* HOW IT WORKS */
+.how-it-works{
+    text-align:center;
+    padding:80px 0;
+    background:#fafafa;
+}
+
+.section-tag{
+    display:inline-block;
+    padding:10px 20px;
+    border-radius:30px;
+    background:#efe7ff;
+    color:#7c3aed;
+    font-weight:600;
+    margin-bottom:20px;
+}
+
+.how-it-works h2{
+    font-size:3rem;
+    margin-bottom:20px;
+}
+
+.how-it-works p{
+    max-width:800px;
+    margin:auto;
+    color:#666;
+    line-height:1.8;
+}
+
+/* RESPONSIVE */
+@media (max-width:768px){
+
+    .nav-links{
+        display:none;
+    }
+
+    .hero-content{
+        flex-direction:column;
+        text-align:center;
+    }
+
+    .hero-text h1{
+        font-size:2.5rem;
+    }
+
+    .hero-buttons{
+        justify-content:center;
+        flex-wrap:wrap;
+    }
+
+    .visit-card,
+    .message-card{
+        position:static;
+        margin:15px auto;
+    }
+
+    .how-it-works h2{
+        font-size:2rem;
+    }
 }
