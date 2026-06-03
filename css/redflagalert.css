@@ -104,9 +104,52 @@ html{
     background-color: #4E2A8A;
     min-height: calc(100vh - 7rem);
 }
+.left{
+    background-color: #4E2A8A;
+    min-height: calc(100vh - 7rem);
+}
+.left-container{
+
+}
+.main-sub{
+    border-bottom: 3px solid #8A62D866;
+    padding: 2rem;
+    display: flex;
+    color: #A1A1AA;
+}
+.overview,
+.registry,
+.tracker,
+.alert,
+.action-enroll,
+.summary{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    align-items: center;
+    margin-left: 4rem;
+    color: #F2F2F7;
+    padding: 1rem;
+    cursor: pointer;
+}
+.overview:hover,
+.registry:hover,
+.tracker:hover,
+.summary:hover,
+.alert:hover,
+.action-enroll:hover{
+    background-color: #EFEAFB29;
+}
+.summary, .tracker{
+    margin-bottom: 3rem;
+}
+.main-sub{
+    /* margin-bottom: 2rem; */
+}
+
+
 /*RIGHT CONTAINER*/
 .right{
-    background-color:# ;
     margin-left: 5rem;
     margin-right: 5rem;
 }
